@@ -19,6 +19,7 @@ header {
 header .brand {
     display: flex;
     align-items: center;
+    font-family: 'Khand', sans-serif;
 }
 
 header .nav {
