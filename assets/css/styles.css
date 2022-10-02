@@ -72,6 +72,11 @@ main {
 
 #services {
     padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .service {
@@ -80,7 +85,7 @@ main {
 }
 
 .service .serv_img {
-    margin-right: 10px;
+    margin-right: 3rem;
 }
 
 .service .serv_detail {
