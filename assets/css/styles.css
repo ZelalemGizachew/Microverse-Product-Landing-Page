@@ -87,7 +87,7 @@ main {
 }
 
 #services {
-    padding-top: 16px;
+    padding-top: 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,7 +96,7 @@ main {
 
 .service {
     display: flex;
-    margin-top: 16px;
+    margin-top: 48px;
 }
 
 .service .serv_img {
@@ -114,22 +114,10 @@ main {
     width: 100%;
 }
 
-@media (max-width: 480px) {
-    .pricing {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 480px) {
-    .pricing {
-        flex-direction: row;
-    }
-}
-
 .pricing_block {
     border: 1px solid black;
-    width: calc(100% / 3);
-    /* margin: 10px; */
+    width: calc(90% / 3);
+    margin: 3px;
 }
 
 .pricing_block h3 {
@@ -187,4 +175,20 @@ main {
     justify-content: right;
     align-items: center;
     padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .pricing {
+        flex-direction: column;
+    }
+
+    .pricing_block {
+        width: 60%;
+    }
+}
+
+@media (min-width: 800px) {
+    .pricing {
+        flex-direction: row;
+    }
 }
