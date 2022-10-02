@@ -1,79 +1,81 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  background-color: rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
+    font-family: 'Lato', sans-serif;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 7%;
-  width: 100%;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 7%;
+    width: 100%;
+    align-items: center;
 }
 
 header .brand {
-  display: flex;
-  align-items: center;
-  font-family: "Khand", sans-serif;
+    display: flex;
+    align-items: center;
+    font-family: "Khand", sans-serif;
 }
 
 header .nav {
-  width: 50%;
+    width: 50%;
 }
 
 header .nav .nav-menu {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
 }
 
 .video {
-  text-align: center;
-  margin: 10px 2px;
-  padding: 10px 0;
+    text-align: center;
+    margin: 10px 2px;
+    padding: 10px 0;
 }
+
 .pricing {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .nav-menu li {
-  list-style: none;
-  margin: 0px 2%;
+    list-style: none;
+    margin: 0px 2%;
 }
 
 main {
-  margin: 10px 12%;
+    margin: 10px 12%;
 }
 
 #landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 48px;
 }
 
 #landing h2 {
-  font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 #landing input {
-  padding: 3px 5px;
-  font-size: 16px;
-  width: 300px;
+    padding: 3px 5px;
+    font-size: 16px;
+    width: 300px;
 }
 
 #landing button {
@@ -90,7 +92,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Lato', sans-serif;
 }
 
 .service {
@@ -106,37 +107,84 @@ main {
     line-height: 24px;
 }
 
+.pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .pricing {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 480px) {
+    .pricing {
+        flex-direction: row;
+    }
+}
+
+.pricing_block {
+    border: 1px solid black;
+    width: calc(100% / 3);
+    /* margin: 10px; */
+}
+
+.pricing_block h3 {
+    background-color: rgba(191, 191, 191, 0.848);
+    padding: 10px;
+}
+
+.pricing_detail {
+    line-height: 1.6;
+}
+
+.pricing_detail .price {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pricing_detail button {
+    padding: 12px 24px;
+    margin: 16px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(255, 198, 27);
+}
+
 .footer {
-  background-color: lightgray;
-  padding: 10px;
-  margin: 5px;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
 }
 
 .footer__links {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
 }
 
 .footer__links ul {
-  color: black;
-  text-decoration: none;
-  padding: 0 10px;
-  display: flex;
-  list-style: none;
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    display: flex;
+    list-style: none;
 }
 
 .footer__links a {
-  color: black;
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 2px 10px;
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 2px 10px;
 }
 
 .footer__social {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
 }
