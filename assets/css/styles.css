@@ -77,7 +77,33 @@ main {
 }
 
 #landing button {
-  padding: 8px;
+    padding: 8px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(255, 198, 27);
+    border: none;
+}
+
+#services {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.service {
+    display: flex;
+    margin-top: 16px;
+}
+
+.service .serv_img {
+    margin-right: 3rem;
+}
+
+.service .serv_detail {
+    line-height: 24px;
 }
 
 .footer {
